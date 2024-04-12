@@ -1,0 +1,22 @@
+.simply-countdown {
+    overflow: hidden;
+    display: table;
+    margin: auto;
+    font-family: 'Arial', sans-serif
+}
+
+.simply-countdown>.simply-section {
+    width: 20px;
+    height: 20px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+.simply-countdown>.simply-section .simply-amount,
+.simply-countdown>.simply-section .simply-word {
+    display: block;
+    text-align: center
+}

@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'gyahegi';
+    src: url('/font/gyahegi/Gyahegi.otf');
+}
+@font-face {
+    font-family: 'classy';
+    src: url('/font/classy_vogue/Classyvogueregular.ttf');
+}
+@font-face {
+    font-family: 'mileadilan';
+    src: url('/font/mileadilan/mileadilan.otf');
+}
+@font-face {
+    font-family: 'riesling';
+    src: url('/font/riesling/riesling.ttf');
+}
+@font-face {
+    font-family: 'soage';
+    src: url('/font/soage/Soage.otf');
+}
+@font-face {
+    font-family: 'charlotte';
+    src: url('/font/the_charlotte/The-Charlotte.ttf');
+}
+
+.navbar-fixed {
+    @apply sticky z-[9999] bg-white bg-opacity-20;
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 -1px 0 0  rgba(0,0,0,0.2);
+}
+
+.hamburger-line {
+    @apply w-[24px] h-[2px] my-1.5 block bg-black dark:bg-white; 
+}
+
+.hamburger-active > span:nth-child(1){
+    @apply rotate-45
+}
+.hamburger-active > span:nth-child(3){
+    @apply  -rotate-45
+}
+.hamburger-active > span:nth-child(2){
+    @apply scale-0
+}
